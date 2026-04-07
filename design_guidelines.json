@@ -1,0 +1,111 @@
+{
+  "project_name": "GenZ AI Dashboard",
+  "theme": "light",
+  "archetype": "Archetype 3 (Pastel & Soft) + Neo-Brutalist Twist",
+  "design_philosophy": {
+    "core_vibe": "Approachable, organized, high-energy, with a stark technical underbelly.",
+    "e1_principles": [
+      "Neo-Brutalist contrast: Soft pastels with hard 2px black borders and harsh drop shadows.",
+      "The Terminal Twist: The 'Agent Activity Monitor' uses a stark retro-futurist terminal look (black bg, mono font, neon green/mint text) to contrast the playful pastel dashboard.",
+      "Typography Hierarchy: Bold 'Work Sans' for headings, legible 'IBM Plex Sans' for body, and 'IBM Plex Mono' for agent logs and metadata.",
+      "Generous padding inside bordered containers to avoid text collisions."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Work Sans, sans-serif",
+      "weights": ["700", "900"],
+      "usage_rules": "Use tracking-tight for all headings. Never center unless explicitly needed for layout balance."
+    },
+    "body": {
+      "family": "IBM Plex Sans, sans-serif",
+      "weights": ["400", "500", "600"]
+    },
+    "monospace": {
+      "family": "IBM Plex Mono, monospace",
+      "weights": ["400", "600"],
+      "usage_rules": "Strictly use for Agent Activity Logs, technical data, timestamps, and overline tags."
+    },
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl font-black tracking-tighter",
+      "h2": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-bold",
+      "h4": "text-lg sm:text-xl font-bold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm",
+      "tiny_mono": "text-xs font-mono uppercase tracking-[0.1em]"
+    }
+  },
+  "color_palette": {
+    "backgrounds": {
+      "main": "#FAFAFA",
+      "terminal": "#050505",
+      "glass": "rgba(250,250,250,0.9)"
+    },
+    "accents": {
+      "primary": "#FDE047", 
+      "secondary": "#C4B5FD", 
+      "tertiary": "#A7F3D0",
+      "terminal_text": "#A7F3D0",
+      "border": "#050505"
+    },
+    "text": {
+      "primary": "#050505",
+      "muted": "#4B5563",
+      "inverse": "#FAFAFA"
+    }
+  },
+  "spacing_and_layout": {
+    "grid_system": "The 'Control Room' Grid (Mode B) tailored for Neo-Brutalism. Strict gaps, no jagged edges.",
+    "gap": "gap-6 md:gap-8",
+    "padding": "Containers must use p-6 or p-8. No cramped text against borders.",
+    "border_radius": "rounded-none or max rounded-md for slight softening. Keep edges mostly sharp."
+  },
+  "surface_strategies": {
+    "cards": "bg-[#FAFAFA] border-2 border-[#050505] shadow-[4px_4px_0px_0px_rgba(5,5,5,1)] transition-transform hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(5,5,5,1)]",
+    "buttons_primary": "bg-[#FDE047] text-[#050505] border-2 border-[#050505] shadow-[4px_4px_0px_0px_rgba(5,5,5,1)] hover:bg-[#FACC15] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_rgba(5,5,5,1)] active:translate-y-[4px] active:translate-x-[4px] active:shadow-none transition-all font-bold",
+    "buttons_secondary": "bg-[#C4B5FD] text-[#050505] border-2 border-[#050505] shadow-[4px_4px_0px_0px_rgba(5,5,5,1)] hover:bg-[#A78BFA] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_rgba(5,5,5,1)] transition-all font-bold",
+    "terminal_panel": "bg-[#050505] text-[#A7F3D0] border-2 border-[#050505] shadow-[4px_4px_0px_0px_rgba(167,243,208,1)] p-6 font-mono overflow-y-auto",
+    "inputs": "bg-[#FAFAFA] border-2 border-[#050505] focus:ring-0 focus:outline-none focus:bg-[#FEF9C3] transition-colors rounded-none"
+  },
+  "components": {
+    "navigation": "Sidebar with hard right border. Active links should have a background block of #C4B5FD with a 2px black border and shadow.",
+    "agent_chat": "Chat bubbles should be stark boxes. User: bg-[#FDE047]. Agent: bg-[#FAFAFA]. Both with hard borders.",
+    "task_manager": "List items with custom thick black border checkboxes. Strikethrough text for completed items, with muted opacity.",
+    "calendar_view": "Grid with thick black borders (border-collapse style). Today highlighted in #A7F3D0."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "empty_state",
+        "url": "https://static.prod-images.emergentagent.com/jobs/4c6c83c2-5874-4551-a552-2ceb0fb1d344/images/004880cb2907feb3550dad9cd86646b9229d1a9ee30ff025f9775822ce8bcc19.png",
+        "description": "Minimalist vector illustration of a checklist and calendar, neo-brutalist style. Use for empty task lists or welcome screen."
+      },
+      {
+        "category": "mascot",
+        "url": "https://static.prod-images.emergentagent.com/jobs/4c6c83c2-5874-4551-a552-2ceb0fb1d344/images/4d06b282290a9d973e16e8d77e4db910bb9b72555191040b76fa818f44801773.png",
+        "description": "Cute robot head mascot in pastel and thick black outlines. Use in the AI chat header or Agent Activity Monitor."
+      },
+      {
+        "category": "background_abstract_1",
+        "url": "https://images.unsplash.com/photo-1767473907132-9e52351d023a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMHNoYXBlcyUyMHBhc3RlbCUyMGNvbG9yc3xlbnwwfHx8fDE3NzUyOTM2ODl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract pastel shapes. Can be used as a subtle header background pattern (with opacity)."
+      },
+      {
+        "category": "background_abstract_2",
+        "url": "https://images.unsplash.com/photo-1766430342829-9896223959db?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMHNoYXBlcyUyMHBhc3RlbCUyMGNvbG9yc3xlbnwwfHx8fDE3NzUyOTM2ODl8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract geometric pastel shapes. Good for auth screen or decorative side panels."
+      }
+    ]
+  },
+  "icons": "lucide-react, but set strokeWidth={2.5} to match the thick, brutalist borders.",
+  "testing": "All interactive elements must include data-testid attributes (e.g., data-testid='add-task-button', data-testid='agent-chat-input').",
+  "instructions_to_main_agent": [
+    "1. Setup font imports for 'Work Sans', 'IBM Plex Sans', and 'IBM Plex Mono' in index.html or use Google Fonts link in CSS.",
+    "2. STRICTLY follow the Neo-Brutalist shadow pattern (box-shadow with hard black offset, NO blur).",
+    "3. Use standard HTML/Tailwind for main layouts instead of rigid Shadcn components if they conflict with the bold borders. Customizing pure divs is easier for the Neo-Brutalist look.",
+    "4. For the 'Agent Activity Monitor', make it look like a stark, retro terminal (black bg, mint green mono text) floating inside the pastel dashboard. Use drop-shadows with mint green.",
+    "5. Ensure deep contrast for all text. No light gray text on white. Use #050505 or #4B5563 minimum.",
+    "6. Apply empty state images and mascot exactly where specified."
+  ]
+}

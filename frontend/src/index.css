@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FAFAFA;
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 2%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 2%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 2%;
+    --primary: 47 96% 64%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 260 69% 86%;
+    --secondary-foreground: 0 0% 2%;
+    --muted: 220 14% 29%;
+    --muted-foreground: 220 14% 29%;
+    --accent: 160 84% 82%;
+    --accent-foreground: 0 0% 2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 2%;
+    --input: 0 0% 2%;
+    --ring: 0 0% 2%;
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.neo-card {
+  @apply bg-[#FAFAFA] border-2 border-[#050505];
+  box-shadow: 4px 4px 0px 0px rgba(5,5,5,1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.neo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px 0px rgba(5,5,5,1);
+}
+
+.neo-button-primary {
+  @apply bg-[#FDE047] text-[#050505] border-2 border-[#050505] font-bold;
+  box-shadow: 4px 4px 0px 0px rgba(5,5,5,1);
+  transition: all 0.1s;
+}
+
+.neo-button-primary:hover {
+  @apply bg-[#FACC15];
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px rgba(5,5,5,1);
+}
+
+.neo-button-primary:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.neo-button-secondary {
+  @apply bg-[#C4B5FD] text-[#050505] border-2 border-[#050505] font-bold;
+  box-shadow: 4px 4px 0px 0px rgba(5,5,5,1);
+  transition: all 0.1s;
+}
+
+.neo-button-secondary:hover {
+  @apply bg-[#A78BFA];
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px rgba(5,5,5,1);
+}
+
+.neo-input {
+  @apply bg-[#FAFAFA] border-2 border-[#050505] rounded-none;
+  transition: background-color 0.2s;
+}
+
+.neo-input:focus {
+  @apply bg-[#FEF9C3] outline-none ring-0;
+}
+
+.terminal-panel {
+  @apply bg-[#050505] text-[#A7F3D0] border-2 border-[#050505] font-mono;
+  box-shadow: 4px 4px 0px 0px rgba(167,243,208,1);
+}
